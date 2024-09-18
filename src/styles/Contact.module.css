@@ -1,0 +1,46 @@
+.contact_main {
+  /* margin-top: 14%; */
+  height: 65vh;
+}
+
+.contact_main .content .h_5 {
+  font-size: 22px;
+}
+
+.icon_1 .link {
+  font-size: 18px;
+  margin: 0 18px;
+  border-radius: 50%;
+  background-color: white;
+  color: #4e007b !important;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s !important;
+  width: 40px;
+  height: 38px;
+  line-height: 35px;
+  position: relative;
+  display: inline-block;
+}
+.icon_1:before {
+  background: #68187a;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.5s;
+  width: 100%;
+  z-index: -1;
+
+  /* text-shadow: 0 0 2px #87209e; */
+}
+.about_img {
+  transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+  will-change: transform;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+  cursor: pointer;
+}

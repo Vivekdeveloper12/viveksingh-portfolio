@@ -1,0 +1,161 @@
+#home{
+  height: auto;
+  width: 100%;
+  padding-bottom: 130px;
+}
+.home_content{
+  margin-top: 15%;
+};
+.header_h1{
+  font-size: 60px;
+}
+
+.header_text p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  font-size: 40px;
+  width: 28%;
+  margin: 0;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 28% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 89, 0); }
+}
+.header_text2 p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  font-size: 40px;
+  width: 28%;
+  margin: 0;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 28% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 89, 0); }
+}
+
+/* -----------------Introduction------------------- */
+
+
+.span_color{
+  color: #c000ff;
+}
+.content h2{
+  font-size: 40px;
+  text-align: center;
+}
+.intro_content{
+  margin-top: 55px;
+}
+.intro_content ul li p{
+font-size: 20px;
+}
+.intro_content ul li{
+  list-style: none;
+}
+
+.about_img{
+  transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+    cursor: pointer;
+}
+.icon_1 .link{
+  font-size: 18px;
+  margin: 0 18px;
+  border-radius: 50%;
+  background-color: white;
+  color: #4e007b;
+  cursor: pointer;
+  text-align: center;
+  transition: .5s !important;
+  width: 40px;
+  height: 38px;
+  line-height: 35px;
+  position: relative;
+  display: inline-block;
+
+};
+.icon_1:before{
+  background: #68187a;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  transition: .5s;
+  width: 100%;
+  z-index: -1;
+  }
+
+  /* @media (max-width: 576px) {
+    #home {
+      height: 75vh;
+    }
+  
+    .home_content {
+      margin-top: 8%;
+    }
+  
+    .header_h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+  
+    .header_text p {
+      font-size: 25px;
+      width: 90%;
+    }
+  
+    .header_text2 p {
+      font-size: 25px;
+      width: 90%;
+    }
+  
+    .content h2 {
+      font-size: 24px;
+    }
+  
+    .intro_content ul li p {
+      font-size: 16px;
+    }
+  
+    .icon_1 .link {
+      font-size: 16px;
+      width: 35px;
+      height: 35px;
+      line-height: 32px;
+    }
+  
+    .about_img {
+      width: 100%;
+      height: auto;
+    }
+  } */
+

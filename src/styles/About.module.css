@@ -1,0 +1,33 @@
+.main{
+margin-top: 12%;
+}
+.content ul li{
+    list-style: none;
+    line-height: 35px;
+    /* display: flex;
+    justify-content: center; */
+}
+.content ul li p{
+    font-size: 18px;
+}
+.arrow_icon{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #77ff00;
+};
+
+/* --------------------------------------- */
+.icon_section{
+    /* border: 1.7px solid rgba(200, 137, 230, .637) !important;
+    border-radius: 5px !important;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, .137) !important;
+    display: table !important;
+    font-size: 4.5em !important;
+    margin: 15px !important;
+    opacity: .93 !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+    text-align: center !important;
+    transition: all .4s ease 0s !important;
+    vertical-align: middle !important; */
+}

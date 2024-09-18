@@ -1,0 +1,148 @@
+#header{
+    /* background: url('../../public//Assets/Image/img.png'); */
+    /* height: 90vh;
+    width: 100%;
+    color: #fff;  */
+  }
+  .header_a{
+    font-size: 18px !important;
+    color: #fff !important;
+  }
+  .header_text{
+    margin-top: 10%;
+  };
+  .header_h1{
+    font-size: 60px;
+  }
+  
+  .header_text p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    font-size: 40px;
+    width: 28%;
+    margin: 0;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 28% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 89, 0); }
+  }
+  .header_text2 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    font-size: 40px;
+    width: 28%;
+    margin: 0;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 28% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 89, 0); }
+  }
+
+
+  
+  .navbar {
+    transition: background-color 0.6s ease;
+   
+  }
+  
+  .nav_scrolled {
+    background: #8501a44a !important;
+    transition: 0.3s ease-in;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+  .navbarCollapse {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden by default */
+    height: 100vh;
+    width: 300px; /* Width of the menu */
+    background-color: #000; /* Change background color as needed */
+    transition: right 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1050; /* Make sure it's above other elements */
+    padding-top: 60px; /* Adjust for your navbar height */
+  }
+  
+  .navbarCollapse ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .navbarCollapse li {
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .navbarCollapse li a {
+    color: #fff; /* Change link color as needed */
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navbarCollapse.show {
+    right: 0; /* When the menu is open, bring it into view */
+  }
+  
+  .nav-scrolled {
+    background-color: #333; /* Add a background color when scrolling */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Mobile-first: collapse is hidden by default */
+.navbarCollapse {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Offscreen */
+  height: 100vh;
+  width: 300px; /* Width of the menu */
+  background-color: #00000099;
+  transition: right 0.3s ease-in-out;
+  z-index: 1050;
+  padding-top: 60px;
+}
+
+/* Show the menu when open */
+.navbarCollapse.show {
+  right: 0; /* When toggled, bring into view */
+}
+
+/* On larger screens, disable collapse and always show the links */
+@media (min-width: 992px) {
+  .navbarCollapse {
+    position: relative;
+    right: 0;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    padding-top: 0;
+    display: block !important; /* Ensure the menu is always visible */
+  }
+  .navbar-toggler {
+    display: none; /* Hide the toggle button on larger screens */
+  }
+}
