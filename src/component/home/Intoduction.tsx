@@ -73,12 +73,12 @@ const Intoduction = (props: Props) => {
         </h4>
         <div className="d-flex justify-content-center mt-3 icons">
           <div className={styles.icon_1}>
-            <Link className={styles.link} href="https://www.instagram.com/vivek__singh">
+            <Link className={styles.link} href="https://www.instagram.com/vivek__singh" target="_blank">
               <FaInstagram />
             </Link>
           </div>
           <div className={styles.icon_1}>
-            <Link className={styles.link} href="https://www.linkedin.com/in/vivek-singh-baghel-62346a215">
+            <Link className={styles.link} href="https://www.linkedin.com/in/vivek-singh-baghel-62346a215" target="_blank">
               <FaLinkedin />
             </Link>
           </div>

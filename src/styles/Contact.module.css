@@ -1,6 +1,6 @@
 .contact_main {
   /* margin-top: 14%; */
-  height: 65vh;
+  /* height: 65vh; */
 }
 
 .contact_main .content .h_5 {
@@ -43,4 +43,13 @@
   will-change: transform;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  .content h2 {
+    font-size: 1.5rem !important; /* Smaller font for h2 on small devices */
+  }
+
+  .content h1 {
+    font-size: 2.5rem !important; /* Smaller font for h1 on small devices */
+  }
 }

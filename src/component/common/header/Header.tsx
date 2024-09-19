@@ -2,9 +2,13 @@ import React, { useEffect, useState } from "react";
 import styles from "@/styles/Header.module.css";
 import Link from "next/link";
 import { MdCancel } from "react-icons/md";
+import { usePathname } from "next/navigation";
+// import { useLocation } from "react-router-dom";
+
 type Props = {};
 
 const Header = (props: Props) => {
+  const location = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrollNav  , setScrollNav] = useState<boolean>(false)
   const handleScroll = () =>{
@@ -65,22 +69,22 @@ const Header = (props: Props) => {
         <div className={`${styles.navbarCollapse} ${isOpen ? styles.show : ''}`} id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item pe-4">
-              <Link className={`nav-link ${styles.header_a}`} aria-current="page" href="/">
+              <Link className={`nav-link ${styles.header_a} ${location=='/' && styles.active}`} aria-current="page" href="/">
                 Home
               </Link>
             </li>
             <li className="nav-item pe-4">
-              <Link className={`nav-link ${styles.header_a}`} href="/about">
+              <Link className={`nav-link ${styles.header_a} ${location=='/about' && styles.active}`} href="/about">
                 About
               </Link>
             </li>
             <li className="nav-item pe-4">
-              <Link className={`nav-link ${styles.header_a}`} href="/project">
+              <Link className={`nav-link ${styles.header_a} ${location=='/project' && styles.active}`} href="/project">
                 Projects
               </Link>
             </li>
             <li className="nav-item pe-4">
-              <Link className={`nav-link ${styles.header_a}`} href="/contact">
+              <Link className={`nav-link ${styles.header_a} ${location=='/contact' && styles.active}`} href="/contact">
                 Contact
               </Link>
             </li>

@@ -7,6 +7,11 @@
   .header_a{
     font-size: 18px !important;
     color: #fff !important;
+    font-weight: 600 !important;
+    transition: transform 0.3s ease !important;
+  }
+  .header_a:hover{
+    transform: scale(1.2)
   }
   .header_text{
     margin-top: 10%;
@@ -145,4 +150,16 @@
   .navbar-toggler {
     display: none; /* Hide the toggle button on larger screens */
   }
+}
+.nav-link {
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1); /* Adjust the scale as needed */
+}
+.active{
+  color: #c000ff !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
 }

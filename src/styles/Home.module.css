@@ -112,50 +112,12 @@ font-size: 20px;
   transition: .5s;
   width: 100%;
   z-index: -1;
+  };
+  @media (max-width: 576px) {
+    .header_text h1 {
+      font-size: 2rem !important;  
+      line-height: 2.5rem !important;  
+    }
   }
 
-  /* @media (max-width: 576px) {
-    #home {
-      height: 75vh;
-    }
-  
-    .home_content {
-      margin-top: 8%;
-    }
-  
-    .header_h1 {
-      font-size: 35px;
-      text-align: center;
-    }
-  
-    .header_text p {
-      font-size: 25px;
-      width: 90%;
-    }
-  
-    .header_text2 p {
-      font-size: 25px;
-      width: 90%;
-    }
-  
-    .content h2 {
-      font-size: 24px;
-    }
-  
-    .intro_content ul li p {
-      font-size: 16px;
-    }
-  
-    .icon_1 .link {
-      font-size: 16px;
-      width: 35px;
-      height: 35px;
-      line-height: 32px;
-    }
-  
-    .about_img {
-      width: 100%;
-      height: auto;
-    }
-  } */
-
+ 
